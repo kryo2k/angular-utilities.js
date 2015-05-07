@@ -20,3 +20,7 @@ angular
 
 }]);
 ```
+
+### Methods
+For more information about the methods exposed in $utilities class, please see the
+[utilities.js](https://github.com/kryo2k/utils.js) github page.
