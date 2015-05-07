@@ -14,7 +14,7 @@ bower install angular-utilities.js
 // register module with angular application
 angular
 .module('MyApplication', [
-  'angular-utilties'  // include Angular module dependency
+  'angular-utilities'  // include Angular module dependency
 ])
 .factory('MyClass', ['$utilities', function ($utilities) {
 
