@@ -7,17 +7,33 @@ A port of the utilities.js service to Angular.
 bower install angular-utilities.js
 ```
 
-### Usage
+### Example Usage
 
 ```js
 
 // register module with angular application
 angular
-.module('MyApplication', [ 'angular-utilties' ])
+.module('MyApplication', [
+  'angular-utilties'  // include Angular module dependency
+])
 .factory('MyClass', ['$utilities', function ($utilities) {
 
-  // .. Do something!
+  var
+  PROP_DATE = '_date';
 
+  function MyClass (date) {
+    this[PROP_DATE] = new Date();
+    this.date = date;
+  }
+
+  Object.defineProperties(MyClass.prototype, {
+    date: {
+      get: $utilities.getter(PROP_DATE),
+      set: $utilities.setterDate(PROP_DATE),
+    }
+  });
+
+  return MyClass;
 }]);
 ```
 
