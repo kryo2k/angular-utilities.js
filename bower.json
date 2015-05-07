@@ -1,0 +1,22 @@
+{
+  "name": "angular-utilities.js",
+  "main": "angular-utilities.js",
+  "version": "1.0.3",
+  "homepage": "https://github.com/kryo2k/angular-utilities.js",
+  "authors": [
+    "Hans Doller <kryo2k@gmail.com>"
+  ],
+  "description": "A port of the utilities.js service to Angular.",
+  "keywords": [
+    "nodejs",
+    "utilities",
+    "framework-agnostic"
+  ],
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
